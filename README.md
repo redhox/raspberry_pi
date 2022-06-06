@@ -1,4 +1,4 @@
-#base d'un home server sur raspberry_pi
+<h1>base d'un home server sur raspberry_pi</h1>
 
     sudo apt update
     sudo apt upgrade
@@ -16,22 +16,22 @@ mariadb install
 
     sudo systemctl restart mariadb.service
     
-openmedia vault
+<h2>openmedia vault</h2>
     
     wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
  
- jellyfin
+ <h2>jellyfin</h2>
     
     curl -fsSL https://repo.jellyfin.org/ubuntu/jellyfin_team.gpg.key | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/jellyfin.gpg
 .
 
     echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list
   
-  vpn wireguard <a href="https://github.com/Nyr/wireguard-install">lien</a> <a href="https://youtu.be/rtUl7BfCNMY">video</a>
+  <h2>vpn wireguard <a href="https://github.com/Nyr/wireguard-install">lien</a> <a href="https://youtu.be/rtUl7BfCNMY">video</a>
     
     wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
   
-  nextcloud <a href="https://medium.com/@loneauios/how-to-install-nextcloud-on-your-raspberry-pi-4-c20dfcbc45a7">lien</a> 
+  <h2>nextcloud <a href="https://medium.com/@loneauios/how-to-install-nextcloud-on-your-raspberry-pi-4-c20dfcbc45a7">lien</a> </h2>
   
     sudo mysql
 .
@@ -82,7 +82,7 @@ nexcloud derniere version <a href="https://download.nextcloud.com/server/release
   
  edit /var/www/html/nextcloud/config/config.php avec le nom de domaine et/ou ip pour avoir l'acsede depuis le web
  
- ssl et https
+ <h2>ssl et https</h2>
     
     install snap
 .
