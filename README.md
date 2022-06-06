@@ -27,7 +27,7 @@ mariadb install
 
     echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list
   
-  <h2>vpn wireguard <a href="https://github.com/Nyr/wireguard-install">lien</a> <a href="https://youtu.be/rtUl7BfCNMY">video</a>
+  <h2>vpn wireguard <a href="https://github.com/Nyr/wireguard-install">lien</a> et <a href="https://youtu.be/rtUl7BfCNMY">video</a>
     
     wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
   
