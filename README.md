@@ -30,6 +30,12 @@ mariadb install
   <h2>vpn wireguard <a href="https://github.com/Nyr/wireguard-install">lien</a> et <a href="https://youtu.be/rtUl7BfCNMY">video</a></h2>
     
     wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
+  .
+  
+    sudo bash wireguard-install.sh
+  ecrire votre nom de domain ou ip
+  choisir 1.1.1.1 en dns
+  relancer "sudo bash wireguard-install.sh" pour cree d'autre client
   
   <h2>nextcloud <a href="https://medium.com/@loneauios/how-to-install-nextcloud-on-your-raspberry-pi-4-c20dfcbc45a7">lien</a> </h2>
   
