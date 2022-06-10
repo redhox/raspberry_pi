@@ -106,18 +106,30 @@ nexcloud derniere version <a href="https://download.nextcloud.com/server/release
   
   
   
+   <h2>x86</h2> <a href="https://github.com/ptitSeb/box86/blob/master/docs/COMPILE.md">lien</a>
+  
+    git clone https://github.com/ptitSeb/box86
+    cd box86
+    mkdir build; cd build; cmake .. -DRPI4ARM64=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    make -j2
+    sudo make install
+    sudo systemctl restart systemd-binfmt
   
   
+   <h2>teamspeak</h2><a href="https://pimylifeup.com/raspberry-pi-teamspeak/">lien</a>
+   
+   
+   
+   
+   <h2> docker et portainer</h2><a href="https://www.the-digital-life.com/portainer-ubuntu-tutorial/">lien</a>
+   
+        
+        docker volume create portainer_data
   
   
+  .
   
-  
-  
-  
-  
-  
-  
-  
+        docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
   
   
   
