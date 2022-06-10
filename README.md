@@ -106,7 +106,7 @@ nexcloud derniere version <a href="https://download.nextcloud.com/server/release
   
   
   
-   <h2>x86</h2> <a href="https://github.com/ptitSeb/box86/blob/master/docs/COMPILE.md">lien</a>
+   <h2>x86<a href="https://github.com/ptitSeb/box86/blob/master/docs/COMPILE.md">lien</a></h2>
   
     git clone https://github.com/ptitSeb/box86
     cd box86
@@ -116,12 +116,12 @@ nexcloud derniere version <a href="https://download.nextcloud.com/server/release
     sudo systemctl restart systemd-binfmt
   
   
-   <h2>teamspeak</h2><a href="https://pimylifeup.com/raspberry-pi-teamspeak/">lien</a>
+   <h2>teamspeak<a href="https://pimylifeup.com/raspberry-pi-teamspeak/">lien</a></h2>
    
    
    
    
-   <h2> docker et portainer</h2><a href="https://www.the-digital-life.com/portainer-ubuntu-tutorial/">lien</a>
+   <h2> docker et portainer<a href="https://www.the-digital-life.com/portainer-ubuntu-tutorial/">lien</a></h2>
    
         
         docker volume create portainer_data
