@@ -22,10 +22,7 @@ mariadb install
  
  <h2>jellyfin</h2>
     
-    curl -fsSL https://repo.jellyfin.org/ubuntu/jellyfin_team.gpg.key | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/jellyfin.gpg
-.
-
-    echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list
+    curl https://repo.jellyfin.org/install-debuntu.sh | sudo bash
   
   <h2>vpn wireguard <a href="https://github.com/Nyr/wireguard-install">lien</a> et <a href="https://youtu.be/rtUl7BfCNMY">video</a></h2>
     
@@ -45,10 +42,10 @@ mariadb install
     CREATE DATABASE nextcloud;
 .    
     
-    CREATE USER ‘nextclouduser’@’localhost’ IDENTIFIED BY ‘Password’;
+    CREATE USER 'nextclouduser'@'localhost' IDENTIFIED BY 'Password';
 .
 
-    GRANT ALL ON nextcloud.* TO ‘nextclouduser’@’localhost’ IDENTIFIED BY ‘Password’ WITH GRANT OPTION;
+    GRANT ALL ON nextcloud.* TO 'nextclouduser'@'localhost' IDENTIFIED BY 'Password' WITH GRANT OPTION;
 .
     
     FLUSH PRIVILEGES;
