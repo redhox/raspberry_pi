@@ -1,5 +1,14 @@
 <h1>base d'un home server sur raspberry_pi</h1>
 
+Connect ssh sans password
+
+    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+.
+
+    ssh-copy-id pi@"IP address or hostname"
+
+
+standar install
     sudo apt update
     sudo apt upgrade
 .    
