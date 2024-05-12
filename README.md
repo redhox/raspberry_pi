@@ -142,6 +142,7 @@ nexcloud derniere version <a href="https://download.nextcloud.com/server/release
   
   
   
-  
-  
+  <h2> monage d'un bucket S3/minio en local</h2> 
+
+          sudo s3fs bucket_name /point/de/montage -o umask=0002 -o passwd_file=/bucket/passwd_file,use_path_request_style,url=https://bucket.minio_url.com -o allow_other -o uid=1000 -o gid=1000
   
