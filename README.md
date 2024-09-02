@@ -1,4 +1,4 @@
-<h1>base d'un home server sur raspberry_pi</h1>
+<h1>les pti copier collé facile </h1>
 
 Connect ssh sans password
 
@@ -8,30 +8,11 @@ Connect ssh sans password
     ssh-copy-id pi@"IP address or hostname"
 
 
-standar install
-    sudo apt update
-    sudo apt upgrade
-.    
-    
-    sudo apt install apache2 php libapache2-mod-php mariadb-server php-mysql
-.  
-
-    sudo apt install  php-common php-curl php-gd php-intl php-json php-mbstring php-xml php-zip php-imagick php-intl php-apcu php-redis php-http-request
-
-mariadb install
-       
-    sudo mysql_secure_installation
-.
-
-    sudo systemctl restart mariadb.service
     
 <h2>openmedia vault</h2>
     
     wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
  
- <h2>jellyfin</h2>
-    
-    curl https://repo.jellyfin.org/install-debuntu.sh | sudo bash
   
   <h2>vpn wireguard <a href="https://github.com/Nyr/wireguard-install">lien</a> et <a href="https://youtu.be/rtUl7BfCNMY">video</a></h2>
     
@@ -112,7 +93,7 @@ nexcloud derniere version <a href="https://download.nextcloud.com/server/release
   
   
   
-   <h2>x86<a href="https://github.com/ptitSeb/box86/blob/master/docs/COMPILE.md">lien</a></h2>
+   <h2>emulateur x86<a href="https://github.com/ptitSeb/box86/blob/master/docs/COMPILE.md">lien</a></h2>
   
     git clone https://github.com/ptitSeb/box86
     cd box86
