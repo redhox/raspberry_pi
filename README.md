@@ -109,7 +109,10 @@ nexcloud derniere version <a href="https://download.nextcloud.com/server/release
    
    
    <h2> docker et portainer<a href="https://www.the-digital-life.com/portainer-ubuntu-tutorial/">lien</a></h2>
-   
+       
+       sudo apt-get update
+       sudo apt install docker.io
+       sudo apt-get install docker-compose-plugin
         
         docker volume create portainer_data
   
