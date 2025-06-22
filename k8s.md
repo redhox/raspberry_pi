@@ -206,3 +206,21 @@ sudo kubeadm reset
 sudo rm -rf /etc/kubernetes/pki/ca.crt
 sudo rm -rf /etc/kubernetes/kubelet.conf
 ```
+# installation de helm:
+```bash  
+
+curl https://baltocdn.com/helm/signing.asc | sudo gpg --dearmor -o /usr/share/keyrings/helm.gpg
+echo "deb [signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable.list
+sudo apt update
+sudo apt install helm -y
+```
+installation de ngnix
+```bash  
+helm upgrade --install ingress-nginx ingress-nginx \
+  --repo https://kubernetes.github.io/ingress-nginx \
+  --namespace ingress-nginx --create-namespace \
+  --set controller.image.repository=registry.k8s.io/ingress-nginx/controller \
+  --set controller.image.tag="v1.12.3" \
+  --set controller.image.arch="arm64" \
+  --set controller.admissionWebhooks.enabled=false
+```
